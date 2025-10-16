@@ -12,7 +12,7 @@ interface BucketItem {
   imports: [CommonModule, NgForOf],
   template: `
     <div class="container">
-      <div class="hero" [style.background-image]="heroBackground">
+      <div class="hero">
         <h1>Chieff Weaver</h1>
         <h2>portfolio</h2>
         <p>A passionate web developer & owner of Goodi Digital</p>
@@ -58,7 +58,15 @@ interface BucketItem {
       font-family: "Nunito", sans-serif;
     }
 
-
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, #6366f1 0%,rgb(99, 95, 175, 0.3) 100%), url('Columns.jpg');
+      background-size: cover;
+      color: white;
+      border-radius: 1rem;
+      margin-bottom: 3rem;
+    }
 
     .hero h1 {
       font-size: 8rem;
